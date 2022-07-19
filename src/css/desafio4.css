@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --MidnightBlue: #145da0;
+  --darkBlue: #0C2D48;
+  --blue: #2E8BC0;
+  --babyBlue: #B1D4E0;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+
+}
+/*-----------------*/
+
+header {
+  background: var(--MidnightBlue);
+  height: 80px;
+  display: flex;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+#search-container {
+  
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 25px;
+  padding: 5px;
+  background: var(--babyBlue); 
+  
+  
+}
+
+
+
+#search {
+  padding: 10px 10px;
+  border-radius: 15px 0 0 15px;
+  border: none;
+  outline: none;
+}
+
+#login-check {
+  display: none;
+
+}
+
+#login-check:checked + #frm-login{
+  display: flex;
+}
+
+#frm-login  {
+  position: absolute;
+  right: 5px;
+  top: 85px;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+  padding: 25px;
+  background: var(--MidnightBlue);
+  border-radius: 15px;
+  box-shadow: 0 0 30px #000;
+  text-align: center;
+
+}
+
+#frm-login span {
+  color: white;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+#frm-login input , #frm-login button {
+  padding: 20px 10px 10px;
+  outline: none;
+}
+
+#search-button {
+  border-radius: 0 15px 15px 0;
+  border: none;
+  padding: 0 10px;
+  background: var(--darkBlue);
+  color: white;
+  font-weight: bold;
+}
+
+#search-button:hover {
+  background: var(--blue);
+}
+
+#lista {
+  
+  padding-top: 15px;
+  max-width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 auto;
+  
+}
+
+
+#lista li {
+  background: linear-gradient(var(--babyBlue), #0000) ;
+  flex: 0;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 15px;
+  padding: 15px;
+  min-width: 224px;
+  cursor: pointer;
+  
+  
+}
+
+#lista li:hover {
+  background: linear-gradient(var(--blue), #0000) ;
+}
+
+#lista li img {
+  border-radius: 15px;
+  width: 100%;
+  
+}
+
+#lista li p {
+  max-height: 4rem;
+  overflow-y: hidden;
+  position: relative;
+}
+#lista li p::after {
+    content: 'ver mais';
+    background-color: var(--babyBlue);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: calc(100% - 15px );
+    left: 0;
+}
+
+
+.btn {
+  display: block;
+  padding: 0 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+

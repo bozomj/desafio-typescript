@@ -1,3 +1,24 @@
+
+# Francinldo Vieira da Silva
+## Algumas considerações sobre os desafios
+
+### desafios 1 e 2:
+Apenas os arquivos em ts, sem vinculo ao index.html.
+
+### desafio 3:
+Esta vinculado ao index.html (sua execução)
+
+### desafio 4:
+
+Por este desafio por ser mais complexo resolvi criar totalmente separado, dentro da pasta **desadio4**. Porem o index principal contem um **link** para o desafio 4.
+
+
+
+
+<hr>
+# README ORIGINAL 
+
+
 # Aula de Typescript da Take na plataforma DIO
   
 *Bem vindo!!*

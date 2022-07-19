@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="dist/script.js" defer></script>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="flex">
+      <h1 id="logo">MyVideo</h1>
+    </nav>
+
+    <div id="search-container">
+      <input id="search" placeholder="Escreva...">
+      <button id="search-button" tabindex="1">Pesquisar</button>
+    </div>
+
+    <nav>
+      <span class="btn private" id="criarLista-button">Criar lista</span>
+      <span class="btn private" id="buscarListas-button">minhas listas</span>
+      <span class="btn private" id="logout">Sair</span>
+
+      <label for="login-check" class="btn public" id="login-label">Entrar</label>
+      <input type="checkbox" class="public" name="" id="login-check">
+
+      <div id="frm-login" class="dnone public">
+        <span> Entrar </span>
+        <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+        <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+        <!--
+            ##desabilitado, não entendi o intuito de colocar a chave de api no login
+
+            <input id="api-key" placeholder="Api Key" onchange="preencherApi()"> 
+        -->
+        <button id="login-button">Login</button>
+      </div>
+    </nav>
+  </header>
+  <section id="main">
+
+  </section>
+
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
