@@ -10,7 +10,7 @@ Esta vinculado ao index.html (sua execução)
 
 ### desafio 4:
 
-Por este desafio por ser mais complexo resolvi criar totalmente separado, dentro da pasta **desadio4**. Porem o index principal contem um **link** para o desafio 4.
+Por este desafio ser mais complexo resolvi criar totalmente separado, dentro da pasta **desadio4**. Porem o index principal contem um **link** para o desafio 4.
 
 
 
